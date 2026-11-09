@@ -4,83 +4,24 @@ A modern and responsive URL Shortener application built with React.js. This fron
 
 ## 🚀 Features
 
-- User Registration and Login
-- Secure JWT Authentication
-- URL Shortening
-- Shortened URL Management
-- React Router Navigation
-- API Integration with Backend
-- Responsive User Interface
-- Local Storage Token Management
+- **User Registration (Signup):** New users can create an account.
+- **User Login (Signin):** Existing users can securely log in.
+- **Secure Authentication:** JWT-based authentication integrated with the backend.
+- **Protected Routes:** Restrict access to authenticated users where configured.
+- **URL Shortening:** Convert long URLs into short and shareable links.
+- **URL Management:** Manage shortened URLs.
+- **Session Management:** Authentication token handling using Local Storage.
+- **React Router Navigation:** Smooth navigation between application pages.
+- **API Integration:** Connect with the backend REST API.
+- **Responsive UI:** User-friendly interface across different screen sizes.
 
-## 🛠️ Technologies Used
+## 🔐 Authentication Flow
 
-- React.js
-- JavaScript
-- CSS3
-- React Router DOM
-- Axios / Fetch API
-- Local Storage
+1. Users can create a new account through the Signup page.
+2. Registered users can log in through the Signin page.
+3. The frontend sends authentication requests to the backend.
+4. The backend handles authentication and returns a JWT token.
+5. The frontend stores the token in Local Storage.
+6. Authenticated requests use the token when required.
 
-## 📁 Project Structure
-
-```text
-router-dom/
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── App.js
-│   └── index.js
-├── package.json
-└── README.md
-```
-
-## ⚙️ Installation & Setup
-
-**1. Clone the repository**
-
-```bash
-git clone https://github.com/syeda804/mern-url-shortener-frontend.git
-```
-
-**2. Navigate to the project**
-
-```bash
-cd mern-url-shortener-frontend
-```
-
-**3. Install dependencies**
-
-```bash
-npm install
-```
-
-**4. Start the development server**
-
-```bash
-npm start
-```
-
-The application will run at:
-
-`http://localhost:3000`
-
-## 🔌 Backend Integration
-
-This frontend communicates with a Node.js and Express.js backend API.
-
-Make sure the backend server is running before using the application.
-
-Backend API URL (local):
-
-`http://localhost:5000`
-
-## 🔐 Authentication
-
-The application uses JWT-based authentication to manage user sessions. Authentication tokens are stored in browser Local Storage.
-
-## 👩‍💻 Developer
-
-Developed as a MERN Stack URL Shortener project.
 
